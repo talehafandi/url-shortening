@@ -1,0 +1,43 @@
+.App
+    // margin: 20px
+    font-family: "Poppins", sans-serif
+    line-height: 1.5
+    max-width: 1200px
+    margin: 0 auto
+    
+    main
+        .main-container
+            padding: 20px
+            text-align: center
+            .main-header
+                h1
+                    font-size: 24px
+                    // font-weight: 800
+
+                p
+                    font-size: 14px
+                    color: #9E9AA7
+                    margin-top: 10px
+                    line-height: 1.5
+                    font-weight: 500
+                    // font-weight: 400
+            .main-cards
+                display: flex
+                flex-direction: column
+                gap: 60px
+                padding-top: 40px
+                align-items: center
+
+@media ( min-width: 1024px )
+    .App
+        main
+            .main-container
+                padding: 20px 120px
+                .main-cards
+                    gap: 10px
+                    flex-direction: row
+                    justify-content: space-between
+    
+@font-face 
+    font-family: "Poppins"
+    src: url("../fonts/Poppins-Regular.ttf")

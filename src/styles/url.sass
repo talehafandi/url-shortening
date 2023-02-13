@@ -1,0 +1,59 @@
+.url
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: left
+    gap: 15px
+    padding: 20px
+    margin: 20px 0
+    border-radius: 10px
+    // background-color: #3B3054
+    background-color: #fff
+
+    .url-link
+        border-bottom: 1px solid #2acfcf
+        padding-bottom: 10px
+
+    .url-shortened
+        color: #2acfcf
+        // font-weight: 600
+    .btn-copy
+        padding: 10px 20px
+        border-radius: 5px
+        border: none
+        outline: none
+        width: 100%
+        background-color: #2acfcf
+        color: #fff
+        font-weight: 600
+        cursor: pointer
+        transition: all 0.3s ease-in-out
+
+        &:hover
+            background-color: #fff
+            color: #2acfcf
+            transition: all 0.3s ease-in-out
+        &:focus
+            background-color: #3B3054 !important
+            color: #fff !important
+            transition: all 0.3s ease-in-out
+
+// .active
+//     background-color: #3B3054 !important
+//     color: #fff !important
+//     transition: all 0.3s ease-in-out
+
+@media (min-width: 1024px)
+    .url
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+
+        .url-link
+            width: 70%
+            border: none
+            padding: 0
+        
+        .btn-copy
+            width: 90px
+            padding: 10px 0

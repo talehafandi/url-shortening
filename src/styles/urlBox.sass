@@ -1,0 +1,79 @@
+.url-box
+    padding: 20px
+    
+    .url-box-container
+        background-color: #3B3054
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 12px
+        padding: 20px
+        border-radius: 10px
+        // position: relative
+
+        
+        
+        .url-input-container
+            width: 100%
+            // position: relative
+            display: flex
+            flex-direction: column
+            gap: 5px
+            .url-box-input
+                width: 100%
+                padding: 10px 20px
+                border-radius: 5px
+                border: none
+                outline: none
+            .error-label
+                color: #F46262
+                font-weight: 400
+                font-style: italic
+                // position: absolute
+                // bottom: -15px
+                font-size: 12px
+            .error
+                border: 3px solid #F46262
+                // transition: all 0.3s ease-in-out
+
+        .btn-shorten
+            padding: 10px 20px
+            border-radius: 5px
+            border: none
+            outline: none
+            width: 100%
+            background-color: #2acfcf
+            color: #fff
+            font-weight: 600
+            cursor: pointer
+            transition: all 0.3s ease-in-out
+
+            &:hover
+                background-color: #fff
+                color: #2acfcf
+                transition: all 0.3s ease-in-out
+                
+    .url-box-results
+        max-height: 35vh
+        overflow-y: scroll
+        
+
+
+    
+@media (min-width: 1024px)
+    .url-box
+        padding: 20px 120px
+
+        .url-box-container
+            flex-direction: row
+            justify-content: space-between
+            align-items: baseline
+            // gap: 30px
+            padding: 40px
+
+            .url-box-input
+                // width: 70%
+
+            .btn-shorten
+                width: fit-content
